@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'counter';
+  count=0;
+  onClick( type : string){
+
+    type==='+'?this.count++:this.count--
+  }
+
 }
